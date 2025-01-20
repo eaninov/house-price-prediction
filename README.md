@@ -12,6 +12,7 @@ API, desarrollada en Flask, para la predicción de precios de vivienda. La predi
 - [Ejecución de la API](#ejecucion-de-la-api)
 - [Consumo de la API](#consumo-de-la-api)
 - [Pruebas](#pruebas)
+- [Trabajo futuro](#trabajo-futuro)
 
 ## Análisis exploratorio de datos
 
@@ -281,3 +282,19 @@ Si desea probar un endpoint en particular, debe especificar el archivo de test c
 ```bash
    python -m pytest test_predict.py
 ```
+
+## Trabajo futuro
+
+A continuación, se listan algunas mejoras y características propuestas para el futuro de la aplicación:
+
+* **Separar capas con una arquitectura hexagonal**: Reorganizar el código para seguir una arquitectura más modular y escalable.
+  
+* **Adicionar documentación de la API**: Incluir documentación interactiva de la API para facilitar la comprensión y uso de los endpoints.
+
+* **Adicionar autenticación sobre los endpoints**: Implementar un sistema de autenticación y autorización para garantizar que solo los usuarios autorizados puedan acceder.
+
+* **Incluir un framework de validación de datos**: Usar un framework (Pydantic) para validar y garantizar que los datos recibidos en las solicitudes sean correctos y estén en el formato esperado.
+
+* **Usar una herramienta de monitoreo de la API**: Implementar una solución de monitoreo para tener visibilidad en tiempo real del funcionamiento de la API y detectar posibles problemas oportunamente.
+
+* **Implementar logging**: Usar herramientas de logging para tener un mejor rastreo de los eventos dentro de la aplicación.
