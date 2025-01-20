@@ -12,4 +12,4 @@ Thumbs.db
 
 .pytest_cache/
 
-data/
+data/housing_data_large.csv
