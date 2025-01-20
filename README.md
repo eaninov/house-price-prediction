@@ -266,3 +266,18 @@ curl -L -X POST http://127.0.0.1:5000/update-model \
   "message": "Modelo actualizado."
 }
 ```
+
+## Pruebas
+
+La aplicación incluye un conjunto de pruebas automatizadas sobre los endpoints. Para ejecutar las pruebas, es necesario que el servicio se encuentre en ejecución.
+
+Ejecute las pruebas usando `pytest`.
+   ```bash
+      python -m pytest
+   ```
+
+Si desea probar un endpoint en particular, debe especificar el archivo de test correspondiente `test_<endpoint>.py`.
+
+```bash
+   python -m pytest test_predict.py
+```

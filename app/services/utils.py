@@ -32,5 +32,6 @@ def validate_input(data):
             return False
         if feature=='stratum' and (data[feature] < 1 or data[feature] > 6):
             return False
-
+        if feature=='neighborhood' and len(data[feature]) == 0:
+            return False
     return True
